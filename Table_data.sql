@@ -36,7 +36,3 @@ INSERT INTO Typhoon VALUES (21, '루핏', TO_DATE('2021-09-06', 'YYYY-MM-DD'), TO_
 INSERT INTO Typhoon VALUES (22, '차바', TO_DATE('2022-07-02', 'YYYY-MM-DD'), TO_DATE('2022-07-08', 'YYYY-MM-DD'), 40);
 INSERT INTO Typhoon VALUES (23, '란', TO_DATE('2023-08-01', 'YYYY-MM-DD'), TO_DATE('2023-08-05', 'YYYY-MM-DD'), 30);
 INSERT INTO Typhoon VALUES (24, '풀라산', TO_DATE('2024-09-15', 'YYYY-MM-DD'), TO_DATE('2024-09-20', 'YYYY-MM-DD'), 20);
-
-
-select *
-from typhoon_rating_system;

@@ -1,3 +1,17 @@
+insert into Typhoon_Rating_system
+values(trs_rno_seq.nextval,18, 33, '열대저기압');
+insert into Typhoon_Rating_system
+values(trs_rno_seq.nextval,34, 47, '약');
+insert into Typhoon_Rating_system
+values(trs_rno_seq.nextval,48, 63, '중');
+insert into Typhoon_Rating_system
+values(trs_rno_seq.nextval,64, 84, '강');
+insert into Typhoon_Rating_system
+values(trs_rno_seq.nextval,85, 104, '매우 강');
+insert into Typhoon_Rating_system
+values(trs_rno_seq.nextval,105,999, '초강력');
+
+----------------------------------------------------------------------------------------------------------------------
 INSERT INTO Typhoon VALUES (1, '링링', TO_DATE('2001-09-01', 'YYYY-MM-DD'), TO_DATE('2001-09-05', 'YYYY-MM-DD'), 30);
 INSERT INTO Typhoon VALUES (2, '펑셴', TO_DATE('2002-06-16', 'YYYY-MM-DD'), TO_DATE('2002-06-23', 'YYYY-MM-DD'), 30);
 INSERT INTO Typhoon VALUES (3, '매미', TO_DATE('2003-09-06', 'YYYY-MM-DD'), TO_DATE('2003-09-11', 'YYYY-MM-DD'), 40);
@@ -22,3 +36,5 @@ INSERT INTO Typhoon VALUES (21, '루핏', TO_DATE('2021-09-06', 'YYYY-MM-DD'), TO_
 INSERT INTO Typhoon VALUES (22, '차바', TO_DATE('2022-07-02', 'YYYY-MM-DD'), TO_DATE('2022-07-08', 'YYYY-MM-DD'), 40);
 INSERT INTO Typhoon VALUES (23, '란', TO_DATE('2023-08-01', 'YYYY-MM-DD'), TO_DATE('2023-08-05', 'YYYY-MM-DD'), 30);
 INSERT INTO Typhoon VALUES (24, '풀라산', TO_DATE('2024-09-15', 'YYYY-MM-DD'), TO_DATE('2024-09-20', 'YYYY-MM-DD'), 20);
+
+

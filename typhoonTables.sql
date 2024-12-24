@@ -10,9 +10,9 @@ CREATE TABLE Region (
     regno NUMBER(4) CONSTRAINT Region_regno_PK PRIMARY KEY,
     regname VARCHAR2(20) CONSTRAINT Region_regname_NN NOT NULL,
     country VARCHAR2(20) CONSTRAINT Region_country_NN NOT NULL,
-    latitude NUMBER(3,3) CONSTRAINT Region_latitude_NN NOT NULL 
+    latitude NUMBER(4,1) CONSTRAINT Region_latitude_NN NOT NULL 
         CHECK (latitude BETWEEN -90 AND 90),
-    longitude NUMBER(3,3) CONSTRAINT Region_longitude_NN NOT NULL 
+    longitude NUMBER(4,1) CONSTRAINT Region_longitude_NN NOT NULL 
         CHECK (longitude BETWEEN -180 AND 180)
 );
 
@@ -36,14 +36,15 @@ CREATE TABLE Impact (
 
 CREATE TABLE Weather (
     wno NUMBER(4) CONSTRAINT Weather_wno_PK PRIMARY KEY,
-    highws NUMBER(3,1) CONSTRAINT Weather_highws_CHK CHECK (highws >= 0),
+    highws NUMBER(3) CONSTRAINT Weather_highws_CHK CHECK (highws >= 0),
     tysize NUMBER(4) CONSTRAINT Weather_tysize_CHK CHECK (tysize >= 0),
     rainfall NUMBER(4) CONSTRAINT Weather_rainfall_CHK CHECK (rainfall >= 0),
     lowap NUMBER(4) CONSTRAINT Weather_lowap_CHK CHECK (lowap >= 0),
-    latitude NUMBER(3,3) 
+    latitude NUMBER(4,1) 
         CONSTRAINT Weather_latitude_CHK CHECK (latitude BETWEEN -90 AND 90),
-    longitude NUMBER(3,3) 
+    longitude NUMBER(4,1) 
         CONSTRAINT Weather_longitude_CHK CHECK (longitude BETWEEN -180 AND 180),
     section VARCHAR2(20),
     tyno NUMBER(10) CONSTRAINT Weather_tyno_FK REFERENCES Typhoon(tyno) ON DELETE CASCADE
 );
+
